@@ -1,0 +1,1 @@
+alert("Esta tarea consistia en realizar una pagina web que contubiera 3 parrafos y una imagen, esta pagina se tenia que subir a un repositorio local con 3 commits")
