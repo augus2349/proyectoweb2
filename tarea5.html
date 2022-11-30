@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recursos/estilo.css">
+    <title>Tarea 5</title>
+</head>
+<body>
+    <div class="bordeblanco fondoblanco">
+        <center>
+            <h1>Pseudo codigos</h1>
+            <script src="app1.js"></script>
+
+        <h2>Pregunta el nombre</h2>
+        <h4>
+            print ("cual es tu nombre?")<br>
+            nombre = raw_input()<br>
+            print ("Tu nombre es  " + nombre)<br>
+        </h4>
+        <button onclick="PreguntaNom()">Iniciar</button>
+
+        <h2>Suma dos numeros</h2>
+        <h4>
+            print("SUMA")<br>
+            primerNum = input("Dame el valor del primer numero")<br>
+            segundoNum = input("Dame el valor del segundo numero")<br>
+            resultado = primerNum + segundoNum<br>
+            print("El resultado de la suma es: " + str(resultado))<br>
+        </h4>
+        <button onclick="Suma()">Iniciar</button>
+
+        <h2>NOT</h2>
+        <h4>
+            dormir = False<br>
+            if not dormir:<br>
+                print ("jugar")<br>
+        </h4>
+        <button onclick="Not()">Iniciar</button>
+
+        <h2>AND</h2>
+        <h4>
+            primerNum = input("Dame un primer valor a comparar: ")<br>
+            segundoNum = input("Dame un segundo valor a comparar: ")<br>
+            if primerNum < segundoNum and primerNum > 0:<br>
+                print("Es mayor: " + str(segundoNum))<br>
+            else:<br>
+                print("No es mayor: " + str(segundoNum))<br>
+        </h4>
+        <button onclick="And()">Iniciar</button>
+
+        <h2>OR</h2>
+        <h4>
+                sueno = True<br>
+                noche = False<br>
+                if sueno == True or noche == True:<br>
+                    print("Dormir")<br>
+                else:<br>
+                    print("Despertar")<br>
+        </h4>
+        <button onclick="Or()">Iniciar</button>
+        
+        <h2>Te dice si el numero esta entre 1 y 10</h2>
+        <h4>
+            numero = input("Dame un numero entre el 1 y 10: ")<br>
+                if numero <= 10 and numero >= 1:<br>
+                    print("El numero esta entre 1 y 10")<br>
+                else:<br>
+                    print("El numero no esta entre 1 y 10")<br>
+        </h4>
+        <button onclick="Entre1Y10()">Iniciar</button>
+
+        <h2>Adivina el numero</h2>
+        <h4>
+            numeroSecreto = random.randint(1,10)<br>
+                respuesta = int<br>
+                while respuesta != numeroSecreto:<br>
+                    respuesta = input("Adivina el numero: ")<br>
+                    if respuesta < numeroSecreto:<br>
+                        print("Pista. El numero es mayor.")<br>
+                    else:<br>
+                        print("Pista. El numero es menor.")<br>
+                if respuesta == numeroSecreto:<br>
+                    print("Correcto el numero es " + str(respuesta))<br>
+        </h4>
+        <button onclick="Adivina()">Iniciar</button>
+        </div>
+        </center>
+    </div>
+    <br>
+    <div>
+        <a href="index.html">
+            <button>Regreso</button>
+        </a>
+    </div>
+    
+</body>
+</html>
